@@ -1,0 +1,9 @@
+-- CreateTable
+CREATE TABLE "Book" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "title" TEXT NOT NULL,
+    "author" TEXT NOT NULL,
+    "year" INTEGER NOT NULL,
+    "status" TEXT NOT NULL DEFAULT 'Belum dibaca',
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
